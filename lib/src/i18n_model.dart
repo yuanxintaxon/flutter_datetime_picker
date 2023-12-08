@@ -1,3 +1,39 @@
+LocaleType? getLocaleType({required String countryCode}) {
+  switch (countryCode.toLowerCase()) {
+    case 'cn':
+      return LocaleType.zh;
+    case 'tw':
+      return LocaleType.tw;
+    case 'es':
+      return LocaleType.es;
+    case 'pt':
+      return LocaleType.pt;
+    case 'pl':
+      return LocaleType.pl;
+    case 'tr':
+      return LocaleType.tr;
+    case 'ru':
+      return LocaleType.ru;
+    // case 'hi':
+    //   return LocaleType.hi;
+    case 'fr':
+      return LocaleType.fr;
+    case 'de':
+      return LocaleType.de;
+    case 'it':
+      return LocaleType.it;
+    case 'kr':
+      return LocaleType.ko;
+    case 'jp':
+      return LocaleType.jp;
+    case 'vn':
+      return LocaleType.vi;
+    case 'en':
+    default:
+      return LocaleType.en;
+  }
+}
+
 enum LocaleType {
   en,
   fa,
