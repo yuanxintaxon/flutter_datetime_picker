@@ -14,8 +14,8 @@ LocaleType? getLocaleType({required String countryCode}) {
       return LocaleType.tr;
     case 'ru':
       return LocaleType.ru;
-    // case 'hi':
-    //   return LocaleType.hi;
+    case 'hi':
+      return LocaleType.hi;
     case 'fr':
       return LocaleType.fr;
     case 'de':
@@ -30,7 +30,7 @@ LocaleType? getLocaleType({required String countryCode}) {
       return LocaleType.vi;
     case 'en':
     default:
-      return LocaleType.en;
+      return LocaleType.hi;
   }
 }
 
@@ -71,7 +71,8 @@ enum LocaleType {
   tw,
   fi,
   uk,
-  he
+  he,
+  hi,
 }
 
 final _i18nModel = <LocaleType, Map<String, Object>>{
@@ -1450,7 +1451,52 @@ final _i18nModel = <LocaleType, Map<String, Object>>{
     'day': ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'],
     'am': 'לפנה״צ',
     'pm': 'אחה״צ',
-  }
+  },
+  LocaleType.hi: {
+    // Hindi
+    'cancel': 'रद्द करें',
+    'done': 'संपन्न',
+    'today': 'आज',
+    'monthShort': [
+      "जनवरी",
+      "फ़रवरी",
+      "मार्च",
+      "अप्रैल",
+      "मई",
+      "जून",
+      "जुलाई",
+      "अगस्त",
+      "सितंबर",
+      "अक्टूबर",
+      "नवंबर",
+      "दिसंबर"
+    ],
+    'monthLong': [
+      "जनवरी",
+      "फ़रवरी",
+      "मार्च",
+      "अप्रैल",
+      "मई",
+      "जून",
+      "जुलाई",
+      "अगस्त",
+      "सितंबर",
+      "अक्टूबर",
+      "नवंबर",
+      "दिसंबर"
+    ],
+    'day': [
+      "रविवार",
+      "सोमवार",
+      "मंगलवार",
+      "बुधवार",
+      "बृहस्पतिवार",
+      "शुक्रवार",
+      "शनिवार",
+    ],
+    'am': 'पूर्वाह्न',
+    'pm': 'अपराह्न'
+  },
 };
 
 /// Get international object for [localeType]
