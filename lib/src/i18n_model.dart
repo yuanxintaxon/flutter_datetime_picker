@@ -30,7 +30,7 @@ LocaleType? getLocaleType({required String countryCode}) {
       return LocaleType.vi;
     case 'en':
     default:
-      return LocaleType.hi;
+      return LocaleType.en;
   }
 }
 
