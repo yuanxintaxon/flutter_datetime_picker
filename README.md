@@ -2,7 +2,7 @@
 
 [(Pub) flutter_datetime_picker](https://pub.dev/packages/flutter_datetime_picker)
 
-[Forked Repo]
+[Forked Repository]
 
 A flutter date time picker inspired by [flutter-cupertino-date-picker](https://github.com/wuzhendev/flutter-cupertino-date-picker)
 
